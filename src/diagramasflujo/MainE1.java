@@ -12,9 +12,9 @@ public class MainE1 {
 		int S = teclado.nextInt();
 		
 		if(S<300) {
-			System.out.println("40");
+			System.out.println("Su bonificación es:" +40);
 		}else {
-			System.out.println("0");		
+			System.out.println("Su bonificación es:" +0);		
 					}
 	}
 
