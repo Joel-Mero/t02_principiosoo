@@ -188,7 +188,7 @@ public class CalculadoraEdad {
 					}
 				}
 			}
-			// Separacion if else general
+		
 		}
 
 	}
