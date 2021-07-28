@@ -17,25 +17,24 @@ public class Ejer2 {
 		Scanner teclado = new Scanner(System.in);
 		int N = teclado.nextInt();
 		
-		if (N==-1) {
-			i=-2;
+		if (N == -1) {
+			i = -2;		
 		}else {
-			
-		}if (N % 2== 0) {
-			SP= SP+ N;
-		}else {
-			SI= SI + N;
-			CI= CI + 1;
-			PI= SI / CI;
+			if (N % 2 == 0) {
+				SP = SP + N;
+			}else {
+				SI = SI + N;
+				CI = CI + 1;
+				PI = SI / CI;
+			}
 		}
-		
 	}
 	System.out.println("La suma es:" + SP);
 	System.out.println();// SALTO DE LÍNEA
 	System.out.println("El promedio es:" + PI);
 		
-	}
 	
+	}
 
 }
 
