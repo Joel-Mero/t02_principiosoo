@@ -8,8 +8,8 @@ public class EjerDoWhile {
 		// TODO Auto-generated method stub
 
 		System.out.println("Ingrese un número:");
-		Scanner entrada = new Scanner(System.in);
-		int N = entrada.nextInt();
+		Scanner teclado = new Scanner(System.in);
+		int N = teclado.nextInt();
 		
 		int SP = 0;
 		int SI = N;
@@ -18,7 +18,7 @@ public class EjerDoWhile {
 		
 		do {
 			System.out.println("Ingrese un número:");
-			N = entrada.nextInt();
+			N = teclado.nextInt();
 			
 			if (N % 2 == 0) {
 				SP= (SP + N);
