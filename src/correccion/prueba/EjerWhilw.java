@@ -21,7 +21,7 @@ public class EjerWhilw {
 
 			S = S + N;
 			C = C + 1;
-			P = (S / C);
+			P = S / C;
 
 		}
 
