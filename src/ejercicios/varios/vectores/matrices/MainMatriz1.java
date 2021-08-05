@@ -10,15 +10,27 @@ public class MainMatriz1 {
 		// Declare una matriz [3,4] de tipo char y desarrolle un programa que vaya
 		// solicitando
 		// cada una sus posiciones
+		
+		// ESte es mi teclado
+		Scanner teclado = new Scanner(System.in);
+		
+		
+		System.out.println("Ingrese el núemero de filas del vector:");
+		// El usuario digita el número de filas y yo debo leer desde teclado
+		int longitudFila = teclado.nextInt();
+		
+		System.out.println("Ingrese el núemero de columnas del vector:");
+		// El usuario digita el número de filas y yo debo leer desde teclado
+		int longitudColumnas = teclado.nextInt();
+		
 
-		char A[][] = new char[3][4];
+		char A[][] = new char[longitudFila][longitudColumnas];
 
-		for (int fila = 0; fila < 3; fila++) {
-			for (int columna = 0; columna < 4; columna++) {
+		for (int fila = 0; fila < longitudFila; fila++) {
+			for (int columna = 0; columna < longitudColumnas; columna++) {
 
 				System.out.println("Ingrese el valor fila: " + fila + " Columna: " + columna);
 				// El usuario digita el valor ppor teclado y a continuación lo leo
-				Scanner teclado = new Scanner(System.in);
 				char N = (char) teclado.next().charAt(0);
 
 				A[fila][columna] = N;
@@ -26,8 +38,8 @@ public class MainMatriz1 {
 			}
 		}
 		
-		for (int fila = 0; fila < 3; fila++) {
-			for (int columna = 0; columna < 4; columna++) {
+		for (int fila = 0; fila < longitudFila; fila++) {
+			for (int columna = 0; columna < longitudColumnas; columna++) {
 				System.out.println("El valor de la fila: " + fila + " y la Columna: " + columna + " es: " + A[fila][columna]);
 			}
 		}
