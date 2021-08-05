@@ -15,11 +15,11 @@ public class MainMatriz1 {
 		Scanner teclado = new Scanner(System.in);
 		
 		
-		System.out.println("Ingrese el núemero de filas del vector:");
+		System.out.println("Ingrese el número de filas del vector:");
 		// El usuario digita el número de filas y yo debo leer desde teclado
 		int longitudFila = teclado.nextInt();
 		
-		System.out.println("Ingrese el núemero de columnas del vector:");
+		System.out.println("Ingrese el número de columnas del vector:");
 		// El usuario digita el número de filas y yo debo leer desde teclado
 		int longitudColumnas = teclado.nextInt();
 		
@@ -38,10 +38,12 @@ public class MainMatriz1 {
 			}
 		}
 		
+		System.out.println("Iniciamos a imprimir la matriz ");
 		for (int fila = 0; fila < longitudFila; fila++) {
 			for (int columna = 0; columna < longitudColumnas; columna++) {
-				System.out.println("El valor de la fila: " + fila + " y la Columna: " + columna + " es: " + A[fila][columna]);
+				System.out.print(A[fila][columna] + " ");
 			}
+			System.out.println();
 		}
 
 	}
