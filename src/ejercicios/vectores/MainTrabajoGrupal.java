@@ -1,5 +1,6 @@
 package ejercicios.vectores;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MainTrabajoGrupal {
@@ -16,9 +17,16 @@ public class MainTrabajoGrupal {
 		System.out.println();
 		System.out.println("Ingrese los valores del arreglo");
 		for (int i = 0; i < longitud; i++) {
-			System.out.print("P[" + i + "]-->");
+			System.out.print("A[" + i + "]-->");
 			A[i] = lee.nextInt();
+
 		}
+
+		System.out.println("------- Ordenamiento de JAVA-------");
+
+		Arrays.sort(A);
+		System.out.println("El vector ordenado: " + Arrays.toString(A));
+		System.out.println();
 
 		System.out.println("------- NUMEROS ORDENADOS-------");
 
@@ -46,8 +54,10 @@ public class MainTrabajoGrupal {
 						j -= salto;
 					}
 				}
+
 			}
 			salto = salto / 2;
+
 		}
 
 	}
