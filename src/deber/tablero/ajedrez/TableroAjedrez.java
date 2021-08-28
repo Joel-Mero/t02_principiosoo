@@ -5,6 +5,7 @@ public class TableroAjedrez extends Pieza{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		
 		Peon peonNegro1 = new Peon();
 		peonNegro1.setColor("Peon Negro 1");
 
