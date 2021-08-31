@@ -1,5 +1,7 @@
 package reserva.de.viajes;
 
+import java.util.Scanner;
+
 public class ReservaViajes extends Pasajero{
 
 	public static void main(String[] args) {
@@ -140,8 +142,12 @@ public class ReservaViajes extends Pasajero{
 		
 		System.out.println("Ingrese número de asiento ");
 		System.out.println("Ingrese fila asiento ");
+		Scanner teclado =new Scanner(System.in);//TECLADO
+		int fila = teclado.nextInt();
 		
 		System.out.println("Ingrese culomna asiento ");
+		int columna = teclado.nextInt();
+		
 		
 	}
 
