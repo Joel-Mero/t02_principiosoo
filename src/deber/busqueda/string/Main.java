@@ -2,59 +2,64 @@ package deber.busqueda.string;
 
 import java.util.Scanner;
 
-public class Main extends Estudiante{
+public class Main extends Estudiante {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		int N = 0; 
+
+		int N = 0;
 		do {
-			System.out.println("-----MENÚ-----");	
+			System.out.println("-----MENÚ-----");
 			System.out.println("1. Ingresar Estudiante");
 			System.out.println("2. Buscar Estudiante");
 			System.out.println("3. SALIR");
-			
+
 			Scanner teclado = new Scanner(System.in);// TECLADO
 			N = teclado.nextInt();
-			
+
 			if (N == 1) {
 				System.out.println("Ingresar Cédula de Estudiante");
-				int C = teclado.nextInt();
-				
-				Estudiante estudiante1 = new Estudiante ();
-				estudiante1.setNumeroCedula(C);
-				System.out.println("Valor estatico" + Estudiante.pais);
-				System.out.println("Valor estatico" + Estudiante.provinvia);
-				
-				Estudiante estudiante2 = new Estudiante ();
-				estudiante2.setNumeroCedula(C);
-				
-				Estudiante estudiante3 = new Estudiante ();
-				estudiante3.setNumeroCedula(C);
-				
-				Estudiante estudiante4 = new Estudiante ();
-				estudiante4.setNumeroCedula(C);
-				
-				Estudiante estudiante5 = new Estudiante ();
-				estudiante5.setNumeroCedula(C);
-				
-				Estudiante estudiante[] = new Estudiante [5];
-				estudiante[0] = estudiante1;
-				estudiante[1] = estudiante2;
-				estudiante[2] = estudiante3;
-				estudiante[3] = estudiante4;
-				estudiante[4] = estudiante5;
-								
-			}else if (N == 2) {
-				
-				System.out.println("Ingrese Cédula para Comparar");
-				String C = teclado.nextLine();				
-				
-				boolean resultado = C.contains(C);
-				System.out.println("Contine al estudiante: " + resultado);	
+				System.out.println();
+				String cedula = teclado.nextLine();
+
+				Estudiante fila[] = new Estudiante[5];
+
+				Estudiante estudiante1 = new Estudiante();
+				estudiante1.setNumeroCedula("1723456789");
+
+				Estudiante estudiante2 = new Estudiante();
+				estudiante2.setNumeroCedula("1732323223");
+
+				Estudiante estudiante3 = new Estudiante();
+				estudiante3.setNumeroCedula("1792832783");
+
+				Estudiante estudiante4 = new Estudiante();
+				estudiante4.setNumeroCedula("1792328743");
+
+				Estudiante estudiante5 = new Estudiante();
+				estudiante5.setNumeroCedula("1730947373");
+
+				fila[0] = estudiante1;
+				fila[1] = estudiante2;
+				fila[2] = estudiante3;
+				fila[3] = estudiante4;
+				fila[4] = estudiante5;
+
+			} else if (N == 2) {
+				System.out.println("Buscar Cédula del Estudiante");
+				String cedula = teclado.nextLine();
+
+				for (int i = 0; i < 5; i++) {
+					Estudiante estudiante = fila[i];
+					String cedula2 = estudiante.getNumeroCedula();
+					boolean resultado = cedula.equals(cedula2);
+					System.out.println("Resultado: " + resultado);
+
+				}
+
 			}
-			
-		}while (N != 3);	
+
+		} while (N != 3);
 	}
 
 }

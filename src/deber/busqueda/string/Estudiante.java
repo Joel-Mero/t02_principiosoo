@@ -2,15 +2,16 @@ package deber.busqueda.string;
 
 public class Estudiante {
 
-	private int numeroCedula;
+	private String numeroCedula;
 	public static String pais="ECUADOR";			//VARIABLES ESTATICAS
 	public static String provinvia="PICHINCHA";		//VARIABLES ESTATICAS
 
-	public int getNumeroCedula() {
+	//Métodos SET y GET
+	public String getNumeroCedula() {
 		return numeroCedula;
 	}
 
-	public void setNumeroCedula(int numeroCedula) {
+	public void setNumeroCedula(String numeroCedula) {
 		this.numeroCedula = numeroCedula;
 	}
 
