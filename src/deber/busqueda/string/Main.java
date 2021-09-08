@@ -23,6 +23,8 @@ public class Main extends Estudiante{
 				
 				Estudiante estudiante1 = new Estudiante ();
 				estudiante1.setNumeroCedula(C);
+				System.out.println("Valor estatico" + Estudiante.pais);
+				System.out.println("Valor estatico" + Estudiante.provinvia);
 				
 				Estudiante estudiante2 = new Estudiante ();
 				estudiante2.setNumeroCedula(C);
